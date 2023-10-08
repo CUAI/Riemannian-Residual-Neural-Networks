@@ -1,2 +1,5 @@
-# Riemannian-Residual-Neural-Networks
-[NeurIPS 2023] Riemannian Residual Neural Networks (arxiv TODO)
+# Riemannian Residual Neural Networks
+
+We provide the code for [Riemannian Residual Neural Networks](https://arxiv.org/abs/2006.10254) in this repository. 
+
+TODO: update arxiv link 
