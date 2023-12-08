@@ -2,11 +2,15 @@
 
 We provide the code for [Riemannian Residual Neural Networks](https://arxiv.org/abs/2006.10254) in this repository. 
 
-Summary: We introduce a fully geometric and natural approach for learning residual networks over general Riemannian manifolds, given only the exponential map (i.e. geodesic information). We demonstrate the utility of our approach by using it to improve hyperbolic graph learning tasks and SPD video classification tasks.
+Summary: We introduce a fully geometric and natural approach for learning residual networks over general Riemannian manifolds, given only the exponential map (i.e. only geodesic information). We demonstrate the utility of our approach by using it to improve hyperbolic graph learning and SPD video classification tasks.
+
+We generalize the traditional Euclidean formula $x \leftarrow x + f_\theta(x)$ to the more general Riemannian expression $x \leftarrow \exp_x (f_\theta(x))$ via the Riemannian exponential map. Learning then takes place in the tangent space, i.e., we learn vector fields that induce our networks. A forward pass through a Riemannian Resnet defined over a single manifold is depicted below.
 
 Riemannian ResNet Forward Pass on the Same Manifold            |
 :-------------------------:
 ![RResNet Same Manifold](https://i.imgur.com/02vWOam.png)|
+
+In cases were appropriate maps exist between manifolds, we can further generalize the forward pass, as depicted below.
 
 Riemannian ResNet Forward Pass over Different Manifolds            |
 :-------------------------:
@@ -62,8 +66,6 @@ hyp_resnet = RResNet(
     hyperbolic.Poincare(), [ProjVecField(hyperbolic.Poincare(), in_dim=2, hidden_dim=32, out_dim=2, n_hidden=2) for _ in range(num_blocks)]
 )
 ```
-
-Here we use the Poincaré ball model.
 
 ### Application: Hyperbolic Graph Learning
 
