@@ -24,7 +24,7 @@ This codebase requires Python 3 and PyTorch 1.9+.
 
 ### Installation
 
-All main functionality is provided by the module `rresnet`. To install `rresnet`, clone the repository, and run
+All main functionality is provided by the module `rresnet`. To install `rresnet`, clone the repository, and while in the root, run
 
 ```
 pip install -e .
