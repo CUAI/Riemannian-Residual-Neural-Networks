@@ -2,7 +2,7 @@
 
 We provide the code for [Riemannian Residual Neural Networks](https://arxiv.org/abs/2006.10254) in this repository.
 
-Summary: We introduce a fully geometric and natural approach for learning residual networks over general Riemannian manifolds, given only the exponential map (i.e. only geodesic information). We demonstrate the utility of our approach by using it to improve hyperbolic graph learning and video classification tasks over the manifold of Symmetric Positive Definite (SPD) matrices.
+Summary: We introduce a fully geometric and natural approach for learning residual networks over general Riemannian manifolds, given only the exponential map (i.e. only geodesic information). We demonstrate the utility of our approach by using it to improve hyperbolic graph learning and video classification tasks (performed over the manifold of Symmetric Positive Definite (SPD) matrices, i.e. videos are represented as covariance matrices).
 
 We generalize the traditional Euclidean formula $x \leftarrow x + f_\theta(x)$ to the more general Riemannian expression $x \leftarrow \exp_x (f_\theta(x))$ via the Riemannian exponential map. Learning then takes place in the tangent space, i.e., we learn vector fields that induce our networks. A forward pass through a Riemannian Resnet defined over a single manifold is depicted below.
 
