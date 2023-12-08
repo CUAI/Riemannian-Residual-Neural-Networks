@@ -69,7 +69,7 @@ hyp_resnet = RResNet(
 
 ### Application: Hyperbolic Graph Learning
 
-One of the demonstrated applications in the paper is to hyperbolic graph learning. We build our model into the [Hyperbolic HGCN repo](https://github.com/HazyResearch/hgcn) as an encoder (please see the [Hyperbolic GCN paper](https://arxiv.org/abs/1910.12933) for full details on the hyperbolic graph learning tasks considered). In particular, this repo provides a modified version of the original Hyperbolic GCN repo, under the subfolder `hgcn`. Three models are added as encoders:
+One of the demonstrated applications in the paper is to hyperbolic graph learning. We build our model into the [Hyperbolic HGCN repo](https://github.com/HazyResearch/hgcn) as an encoder (please see the [Hyperbolic GCN paper](https://arxiv.org/abs/1910.12933) for full details on the hyperbolic graph learning tasks considered). In particular, this repo provides a modified version of the original Hyperbolic GCN repo, under the subfolder `hgcn`. Three models are added as encoders in [`hgcn/models/encoders.py`]():
 
 1. `RRNetHyperbolic`, a Riemannian ResNet for hyperbolic space built using embedded vector fields
 
