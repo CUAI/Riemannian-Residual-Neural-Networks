@@ -16,6 +16,8 @@ Riemannian ResNet Forward Pass over Different Manifolds            |
 :-------------------------:
 ![RResNet Different Manifolds](https://i.imgur.com/KP5sUdj.png)|
 
+Learning vector fields that are well suited to a manifold's goemetry requires some care; please see Section 4 of [our paper](https://arxiv.org/pdf/2310.10013.pdf) for further details.
+
 ## Software Requirements
 
 This codebase requires Python 3 and PyTorch 1.9+.
