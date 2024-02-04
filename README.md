@@ -87,6 +87,11 @@ python train.py --act=lrelu --alpha=0.5 --bias=0 --cuda=-1 --dataset=airport --d
 
 We introduce the new parameter `num-horospheres` which specifies the number of learned horospherical feature projections that comprise the hyperbolic feature map of the Riemannian ResNet.
 
+### Application: SPD Manifold Learning
+Another application of the paper is for learning over the manifold of SPD matrices. We implement our Riemannian ResNet using two metrics, the log-Euclidean metric and affine-invariant metric. Building on the code from "Riemannian batch normalization for SPD neural networks [Brooks et al., 2019]", we include experiments on two video classification datasets: AFEW and HDM05. All experiments are done on CPU. To download the data, follow the instructions [here](brooks_spd/supplementary.pdf). To train, go into the `brooks_spd/experiments` folder and run `python afew.py` or `python hdm05.py`. 
+
+
+
 ## Attribution
 
 If you use this code or our results in your research, please cite:
